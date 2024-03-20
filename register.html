@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrera dig</title>
+</head>
+
+<body>
+    <a href="index.html">Start</a>
+    <form action="http://primat.se/services/sendform.aspx?xid=register&xmail=123abceg@test.se" method="post">
+        <label for="name">Your Name</label>
+        <input id="name" type="text" name="name"><br>
+        <label for="info"> What can we improve</label><br>
+        <textarea id="info" rows="4" cols="50" name="info"></textarea>
+
+        <p>Välj maträtt</p>
+        <input type="radio" name="food" id="meat" value="meat">
+        <label for="meat"> Meat</label><br>
+            <input type="checkbox" name="meat"id="chicken"value="chicken">
+            <label for="chicken">Chicken</label>
+            <input type="checkbox" name="meat" id="redMeat"value="red meat">
+            <label for="redMeat"> Red Meat</label>
+
+        <br><input type="radio" name="food"id="fish"value="fish">
+        <label for="fish">Fish</label><br>
+
+        <input type="radio" name="food"id="veg" value="veg">
+        <label for="veg">Vegetarian</label><br>
+        <input type="checkbox" name="newsletter"id="newsletter" value="yes">
+
+        <label for="newsletter">Do you want to signup for a newsletter</label>        
+        <input type="hidden" name="newsletter"value="nej"><br>
+        <label for="regDate">Mata in datum</label>
+        <input type="date" name="regDate"><br>
+        <label for="antalBesokare">Nummber fält (kan bara skriva siffror):</label>
+        <input type="number"name="antalBesokare">
+        <label for="color">Välj tröjfärg</label>
+        <input type="color" name="trojfarg" id="color">
+
+        <br><input type="submit"value=skicka>
+    </form>
+</body>
+
+</html>
